@@ -25,6 +25,6 @@ def create_categoria(categoria: CategoriaCreate, db: Session = Depends(get_db)):
 
 # Ruta para OBTENER (GET) todas las categorias
 # response_model=List[CategoriaResponse] indica que se devuelve una lista de categorias
-@router.get("/", response_model=List[CategoriaResponse])
+@router.get("/all", response_model=List[CategoriaResponse])
 def read_categorias(db: Session = Depends(get_db)):
   return crud_categoria.get_categorias(db=db)

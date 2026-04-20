@@ -29,7 +29,7 @@ const Register = () => {
     setError(''); 
 
     try {
-      const response = await api.post('/register', {
+      await api.post('/register', {
         username: formDataR.username,
         user_email: formDataR.user_email,
         user_pass: formDataR.user_pass,

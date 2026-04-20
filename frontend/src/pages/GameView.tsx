@@ -118,25 +118,6 @@ const GameView = () => {
     }
   }
 
-  // 3. Controlador de clases
-  const obtenerClaseBoton = (opcion_id: number) => {
-    let clases = "btn-opcion "
-    // 3.1 Usuario da click y empieza a correr 0.5s
-    if (opcion_id === opcionSeleccionada && opcionCorrecta === null) {
-      clases += "estado-seleccionado"
-    }
-    // 3.2 Se revela la respuesta
-    if (opcionCorrecta !== null) {
-      if (opcion_id === opcionCorrecta) {
-        clases += "estado-correcto"
-      } else if (opcion_id === opcionSeleccionada) {
-        clases += "estado-incorrecto"
-      }
-    }
-
-    return clases
-  }
-
   // RENDERIZADO VISUAL
   if (!trivia) return (
     <div className="min-h-screen bg-[#0c121b] flex items-center justify-center">

@@ -52,6 +52,11 @@ const Dashboard = () => {
           <h1 className="text-3xl font-black bg-gradient-to-r from-white to-white/70 bg-clip-text text-transparent mb-4 sm:mb-0 tracking-wide">
             PumQuiz!
           </h1>
+          {error && (
+          <div className="mb-6 p-4 bg-red-500/20 border border-red-500/30 rounded-xl text-red-300 text-sm font-bold">
+            {error}
+          </div>
+        )}
           <div className="flex gap-4">
             <button 
               onClick={() => navigate('/leaderboard')}
@@ -60,7 +65,7 @@ const Dashboard = () => {
               🏆 Top 10
             </button>
             <button 
-              onClick={() => { localStorage.removeItem('token'); navigate('/login'); }}
+              onClick={handleLogout}
               className="px-6 py-2 bg-red-500/10 backdrop-blur-md border border-red-500/20 text-red-400 rounded-2xl hover:bg-red-500 hover:text-white transition-all duration-300 font-medium"
             >
               Salir

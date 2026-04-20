@@ -1,0 +1,44 @@
+
+{
+  "trivia_titulo": "Redstone",
+  "dificultad": "Facil",
+  "trivia_descripcion": "Trivia acerca de la redstone en Minecraft.",
+  "imagen_url": "#",
+  "categoria_id": 2,
+  "preguntas": [
+    {
+      "pregunta_texto": "¿De que color es la redstone?",
+      "opciones": [
+        {
+          "opcion_texto": "verde",
+          "es_correcta": false
+        },
+        {
+          "opcion_texto": "azul",
+          "es_correcta": false
+        },
+        {
+          "opcion_texto": "rojo",
+          "es_correcta": true
+        }
+      ]
+    },
+    {
+      "pregunta_texto": "¿Que items se necesita para hacer un repetidor de redstone?",
+      "opciones": [
+        {
+          "opcion_texto": "redstone",
+          "es_correcta": false
+        },
+        {
+          "opcion_texto": "redstone y piedra",
+          "es_correcta": true
+        },
+        {
+          "opcion_texto": "redstone y madera",
+          "es_correcta": false
+        }
+      ]
+    }
+  ]
+}

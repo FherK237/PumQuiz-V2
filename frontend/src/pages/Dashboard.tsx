@@ -18,7 +18,7 @@ const Dashboard = () => {
     const fetchCategorias = async () => {
       try {
         // Peticion GET a la API para obtener las categorias, el tipo de dato que esperamos es un array de Categoria
-        const response = await api.get<Categoria[]>('/categorias/');
+        const response = await api.get<Categoria[]>('/categorias');
         setCategorias(response.data);
       } catch (err) {
         setError('Error al cargar las categorías');

@@ -15,7 +15,8 @@ app = FastAPI(title="PumQuiz API", description="API para la aplicación PumQuiz"
 
 # Configurar CORS para permitir solicitudes desde el frontend
 origins = [
-    "http://localhost:5173", # puerto del front
+    "http://localhost:5173",# puerto del front
+    "https://pum-quiz-v2-jade.vercel.app" # link de vercek
 ]
 
 app.add_middleware(

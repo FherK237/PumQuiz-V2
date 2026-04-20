@@ -15,9 +15,6 @@ class CategoriaCreate(CategoriaBase):
 class CategoriaResponse(CategoriaBase):
     categoria_id: int
     num_trivias: Optional[int] = 0
-    
-    class Config:
-        from_attributes = True
 
     # Esto permite que Pydantic lea la respuesta directamente de un modelo SQLAlchemy sin necesidad de convertirlo a un diccionario primero
     model_config = ConfigDict(from_attributes=True)
